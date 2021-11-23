@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страничка</title>
+    <script src='./script.js'></script>
+</head>
+<body>
+    <div class='sub'>
+        <div class='list' style="float: left; padding-right: 40px;">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        </div>
+      
+        <div>
+            Добавление подразделения: <br>
+            <input type='text' id="newSubInput">
+            <button onclick="addNewSub();">Добавить</button>
+        </div>
+    </div>
+    <hr>
+    <div class='people' style="float: left; padding-right: 40px;" >
+        
+    </div>
+    
+    <div class='newworker' style=' display: none;'>
+        <input type='hidden' id="newid" value="0">
+        <hr>
+            <h3>Добавить\Изменить</h3>
+        Фамилия: <input type='text' id="surname"><br>
+        Имя: <input type='text' id="name"><br>
+        Отчество <input type='text' id="secondname"><br>
+        Дата рождения: <input type='text' id="bdate"><br>
+        Пол: <select id="pol">
+            <option value='1'>Мужской</option>
+            <option value='2'>Женский</option>
+        </select>
+        <br>
+        <button onclick="saveornew()">Ок</button>
+    </div>
+    
+</body>
+</html>
